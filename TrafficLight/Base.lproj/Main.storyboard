@@ -32,11 +32,10 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjv-Xo-bmk">
-                                <rect key="frame" x="69" y="483.5" width="182" height="34.5"/>
-                                <color key="backgroundColor" red="0.61647790670000002" green="0.18046282029999999" blue="0.51266512200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="122.5" y="483.5" width="75.5" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Turn on Traffic Light!" cornerStyle="capsule">
-                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="toggleButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0E-0y-cVa"/>
@@ -63,8 +62,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="greenView" destination="rKW-mO-TXj" id="HJS-Xf-sTH"/>
                         <outlet property="redView" destination="qhp-1o-3AA" id="JR4-tP-WcM"/>
                         <outlet property="toggleButton" destination="Vjv-Xo-bmk" id="o3y-Pl-ASI"/>
+                        <outlet property="yellowView" destination="NeN-cM-mFv" id="JJs-eC-6sq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,6 +76,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
